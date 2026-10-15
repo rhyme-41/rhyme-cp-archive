@@ -67,18 +67,33 @@ int main()
     // 10 1                 3 2
     // 3 2                  10 1
 
-    int n;
-    cin >> n;
-    vector<pair<int, int>> vec(n);
-    for (int i = 0; i < n; i++)
-    {
-        cin >> vec[i].first >> vec[i].second;
-    }
+    // int n;
+    // cin >> n;
+    // vector<pair<int, int>> vec(n);
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> vec[i].first >> vec[i].second;
+    // }
 
-    sort(vec.begin(), vec.end(), cmp);
-    for (int i = 0; i < n; i++)
-    {
-        cout << vec[i].first << " " << vec[i].second << endl;
-    }
+    // sort(vec.begin(), vec.end(), cmp);
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << vec[i].first << " " << vec[i].second << endl;
+    // }
+
+    // ***************** finding unique eliment ************************
+    // vector<int> vec = {3, 7, 9, 2, 3, 8, 2, 7};
+    // sort(vec.begin(), vec.end());
+    // // become adjacent to each other before using unique()
+    // vec.erase(unique(vec.begin(), vec.end()), vec.end());
+    // // unique() moves duplicate elements to the end of the unique range
+    // // and returns an iterator pointing to the position after the last unique element.
+    // // erase() removes the remaining elements from the vector
+    // cout << vec.size() << endl;
+    // for (auto x : vec)
+    // {
+    //     cout << x << " ";
+    // }
+
     return 0;
 }
